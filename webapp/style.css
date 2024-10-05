@@ -1,0 +1,96 @@
+
+		body{
+		margin: 2% 3%; 
+		}
+		.container{
+		display : flex;
+		align-items: center;
+		justify-content: space-evenly;
+		margin: 3% 0%;
+		}
+		.allUsers{
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+		}
+		.userDetails{
+		margin: 1%;
+		border: 1px solid #ddcaca;
+		padding: 1%;
+		}
+		.otherOperations:hover, .login-form:hover, .signup-form:hover, .userDetails:hover{
+			transition: 0.5s;
+			border: 1px solid #09a4ff;
+		}
+	
+		.otherOperations{
+		border: 1px solid #ddcaca;
+		padding: 3%;
+		margin: 3%;
+		}
+		
+		.signup-form{
+		border: 1px solid #ddcaca;
+		padding:2%;
+		}
+		.login-form{
+		padding: 35px  3% 35px 3% ;
+		border: 1px solid #ddcaca;
+		}
+		#depositAmount, #withdrawalAmount, #userName, #email, #password, #userName, #email_id{
+		margin: 7px;
+		}
+		button{
+		background-color: white;
+		}
+	
+				.notification{
+		position: fixed;
+    z-index: 0;
+    border: 1px solid #09ffa4;
+    width: 25%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #09ffa4;
+    top: 0;
+    right: 0;
+    
+		}
+		#notifyHeader, #notifyMsg{
+		text-align: center;
+		}
+		
+		.adminRef{
+		    position: absolute;
+    right: 125;
+		}
+		.backPage{
+		color: blue;
+		cursor: pointer;
+		margin-top: 4px;
+		
+		}
+		.backOptions{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		}
+		
+		.mr-2{
+		padding: 2%;
+		}
+		table, th, td{
+		border: 1px solid black;
+		border-collapse: collapse;
+		}
+		#historyDetails, .historyTable{
+		margin-left: 3%;
+		}
+		.tableRow{
+		margin: 100px;
+		}
+		td{
+	padding: 5px;
+}

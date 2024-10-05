@@ -1,0 +1,104 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>Banking applications</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+     <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="signup-form hideforms" id="signin">
+            <form autocomplete="off">
+                <h3 id="profileHeader">New user? SignUp here</h3>
+                <label>Name</label>
+                <input type="text" id="userName" required placeholder="Enter name"> <br>
+                <label>Email</label>
+                <input type="email" id="email_id" required placeholder="Enter email"> <br>
+                <label>Password</label>
+                <input type="password"  id="user_password" required placeholder="Enter password"><br>
+                <button type="submit" id="signup-btn">Sign up</button>
+                <div class="backPage">
+                    <a id="loginClicked"> Already a user?</a>
+                </div>
+            </form>
+        </div>
+        <div class="login-form hideforms" id="login">
+            <form autocomplete="off">
+                <h3>Already a user? Login here</h3>
+                <label>Email</label>
+                <input type="email" id="email" required placeholder="Enter email"> <br>
+                <label>Password</label>
+                <input type="password" id="password" required placeholder="Enter password"><br>
+                <button type="submit" id="login-btn">Login</button>
+                <div class="backPage">
+                    <a id="signinClicked"> New user?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="notification">
+            <h3 id="notifyHeader"></h3>
+            <p id="notifyMsg"></p>
+        </div>
+        <div class="otherOperations">
+            <div>
+                <div class="backOptions">
+
+                    <div class="backPage">
+                        <p id="backToMsg">Back to Login</p>
+                    </div>
+                    <div class="logoutBtn backPage">
+                        <p id="logout">Logout</p>
+                    </div>
+                </div>
+                <h3 id="loggedUser">Payment operations</h3>
+                <div id="deposit">
+                    <form>
+                        <label>Enter amount to deposit</label>
+                        <input type="number" id="depositAmount" required>
+                        <button type="submit">Deposit<span id="damount"></span></button>
+                    </form>
+                </div>
+                <div id="withdrawal">
+                    <form>
+                        <label>Enter amount to withdrawal</label>
+                        <input type="number" id="withdrawalAmount" required>
+                        <button type="submit">withdrawal</button>
+                    </form>
+                </div>
+                <div id="transfer">
+                    <form>
+                        <label>Enter receiver account number</label>
+                        <input type="number" id="accountNumber" required>
+                        <label>Enter amount to transfer</label>
+                        <input type="number" id="transferAmount" required>
+                        <button type="submit">Transfer</button>
+                    </form>
+                </div>
+                <div>
+                    <!--<h3>View statement</h3>  -->
+                    <button type="button" id="viewHistory">Transaction History</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="userProfile">
+            <h4>Profile info  </h4>  
+            <h6 id="profileName"></h6>
+            <p id="profileAcno">Account Number: </p>
+            <p id="profileBalance">Account Balance: </p>
+            <p id="profileEmail">Email: </p>
+          <!--  <p class="backPage" id="editProfile">Edit</p>  --> 
+        </div>
+    </div>
+    <p id="historyDetails"></p>
+    <p id="userDetails"></p>
+</body>
+
+
+</html>
